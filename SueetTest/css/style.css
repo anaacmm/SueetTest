@@ -1,0 +1,442 @@
+@font-face {
+    font-family: 'fuente';
+    src: url('../fuentes/FiraSans-Regular.ttf');
+}
+html{
+    width: 1080px;
+    height: 1920px;
+    margin: 0;
+}
+body {
+    font-family: fuente;
+    background-color: white;
+    margin: 0;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.notBar{
+    width: 1080px;
+    height: 64px;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    z-index: 8;
+    position: relative;
+}
+
+.notBarFb {
+    width: 70px;
+    height: 64px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+    position: absolute;
+}
+
+.notBarWifi {
+    width: 70px;
+    height: 64px;
+    right: 245px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+    position: absolute;
+}
+
+.notBarBat {
+    width: 70px;
+    height: 64px;
+    right: 105px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+    position: absolute;
+}
+
+.notBarSig {
+    width: 70px;
+    height: 64px;
+    right: 175px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+    position: absolute;
+}
+
+.notBarTime {
+    width: 105px;
+    height: 64px;
+    right: 0px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+    position: absolute;
+}
+
+.header {
+    width: 1080px;
+    height: 224px;
+    background-color: #009CA5;
+    left: 0px;
+    z-index: 5;
+    position: relative;
+}
+
+.headerText {
+    width: 820px;
+    height: 224px;
+    left: 50px;
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    line-height: 224px;
+    position: absolute;
+}
+
+.bars {
+    width: 180px;
+    height: 224px;
+    left: 10px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    line-height: 224px;
+    position: absolute;
+    z-index: 10;
+}
+
+.caret {
+    width: 50px;
+    height: 224px;
+    right: 40px;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    line-height: 224px;
+    position: absolute;
+    z-index: 10;
+}
+
+.postContainer{
+    width: 100%;
+    height: 1632px;
+    top: 288px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.postContainer::-webkit-scrollbar {
+        width: 1px;
+        background-color: #F5F5F5;
+}
+
+.postContainer::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: .5px;
+        background-color: #F5F5F5;
+}
+
+.postContainer::-webkit-scrollbar-thumb {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: .5px;
+        background-color: #F8F8F8;
+}
+
+.post {
+    width: 100%;
+    height: 380px;
+    background-color: white;
+    left: 0px;
+    z-index: 3;
+    border-bottom: .50px solid #F8F8F8;
+    border-top: .50px solid #F8F8F8;
+}
+
+.postInfo{
+    width: 100%;
+    height: 190px;
+    left: 0;
+    top: 0;
+    position: relative;
+}
+
+.postUser {
+    top: 40px;
+    left: 40px;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    position: relative;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+}
+
+.postName{
+    width: 825px;
+    height: 40px;
+    top: 60px;
+    left: 225px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+}
+
+.postDate {
+    width: 825px;
+    height: 40px;
+    top: 110px;
+    left: 225px;
+    font-size: 40px;
+    color: #BCBCBC;
+    position: absolute;
+}
+
+.postDots {
+    width: 40px;
+    height: 130px;
+    top: 50px;
+    right: 10px;
+    font-size: 60px;
+    color: #708089;
+    text-align: center;
+    line-height: 130px;
+    position: absolute;
+}
+
+.postCom {
+    width: 100%;
+    height: 190px;
+    left: 0;
+    position: relative;
+}
+
+.postText {
+    width: 1020px;
+    height: 107px;
+    top: 0px;
+    left: 25px;
+    font-size: 33.5px;
+    color: #BCBCBC;
+    position: relative;
+}
+
+.postLike {
+    width: 60px;
+    height: 60px;
+    top: 120px;
+    left: 25px;
+    font-size: 50px;
+    line-height: 60px;
+    color: #E6D4DB;
+    text-align: center;
+    position: absolute;
+}
+
+.postLikeNum {
+    width: 60px;
+    height: 60px;
+    top: 117px;
+    left: 80px;
+    font-size: 37px;
+    line-height: 60px;
+    color: #BCBCBC;
+    text-align: center;
+    position: absolute;
+}
+
+.postConv {
+    width: 60px;
+    height: 60px;
+    top: 120px;
+    left: 180px;
+    font-size: 50px;
+    line-height: 60px;
+    color: #BFD4D3;
+    text-align: center;
+    position: absolute;
+}
+
+.postConvNum {
+    width: 60px;
+    height: 60px;
+    top: 117px;
+    left: 235px;
+    font-size: 37px;
+    line-height: 60px;
+    color: #BCBCBC;
+    text-align: center;
+    position: absolute;
+}
+
+.plusCircle {
+    left: 865px;
+    top: 1710px;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    line-height: 140px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #009CA5;
+    z-index: 5;
+}
+
+.plusCircleS {
+    left: 870px;
+    top: 1720px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #777777;
+    opacity: 0.3;
+    z-index: 4;
+}
+
+.menu{
+    top: -1920px;
+    transition: 0.01s;
+    width: 1080px;
+    height: 1859px;
+    z-index: 7;
+    background-color: white;
+    position: absolute;
+}
+
+.menuUser {
+    width: 1080px;
+    height: 600px;
+    background-color: #009CA5;
+    position: relative;
+}
+
+.menuUserFoto {
+    top: 90px;
+    left: 430px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.menuUserName {
+    bottom: 160px;
+    height: 60px;
+    width: 1080px;
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+}
+
+.menuTab {
+    width: 1080px;
+    height: 150px;
+    position: relative;
+    border-bottom: .50px solid #F8F8F8;
+    border-top: .50px solid #F8F8F8;
+}
+
+.menuTabIcon {
+    width: 100px;
+    height: 150px;
+    left: 20px;
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    line-height: 150px;
+    position: absolute;
+}
+
+.menuTabName {
+    width: 500px;
+    height: 150px;
+    left: 120px;
+    font-size: 40px;
+    color: black;
+    line-height: 150px;
+    position: absolute;
+}
+
+.notification {
+    width: 100px;
+    height: 70px;
+    top: 40px;
+    right: 30px;
+    font-size: 40px;
+    background-color: #DC3F53;
+    text-align: center;
+    color: white;
+    line-height: 70px;
+    position: absolute;
+    border-radius: 15%;
+}
+
+.building {
+    top: -1920px;
+    transition: 0.01s;
+    width: 1080px;
+    height: 850px;
+    z-index: 7;
+    background-color: #009CA5;
+    position: absolute;
+}
+
+.buildingFoto {
+    top: 90px;
+    left: 315px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.buildingOpt{
+    bottom: 80px;
+    width: 1080px;
+    height: 200px;
+    position: absolute;
+}
+
+.buildingOptIconSq{
+    width: 210px;
+    height: 200px;
+    display: inline-block;
+}
+
+.buildingOptIcon {
+    width: 210px;
+    height: 150px;
+    left: 0;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    position: relative;
+}
+
+.buildingOptIconText {
+    width: 210px;
+    height: 50px;
+    left: 0;
+    bottom: 15px;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    position: relative;
+}
